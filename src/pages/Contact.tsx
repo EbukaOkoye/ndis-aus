@@ -31,7 +31,7 @@ export default function Contact() {
             referrerPolicy="no-referrer"
           />
           {/* Multi-layered overlay for depth and readability */}
-          <div className="absolute inset-0 bg-white/80 md:bg-white/60" />
+          <div className="absolute inset-0 bg-white/80 md:bg-white/45" />
           <div className="absolute inset-0 bg-linear-to-b from-white via-white/80 to-transparent" />
         </div>
 
@@ -44,7 +44,7 @@ export default function Contact() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-[1.1]">
               Get in Touch <span className="text-primary">With Our Team</span>
             </h1>
-            <p className="text-lg text-slate-600 leading-relaxed">
+            <p className="text-lg text-slate-900 font-semibold leading-relaxed">
               Have questions about our services or need help navigating the
               NDIS? We're here to help. Contact us today for a free
               consultation.
@@ -119,7 +119,7 @@ export default function Contact() {
               </div>
 
               {/* Map Placeholder */}
-              <div className="aspect-video rounded-3xl overflow-hidden shadow-xl border-8 border-slate-50 relative group">
+              {/* <div className="aspect-video rounded-3xl overflow-hidden shadow-xl border-8 border-slate-50 relative group">
                 <img
                   src="https://picsum.photos/seed/map/800/600"
                   alt="Map"
@@ -134,7 +134,7 @@ export default function Contact() {
                     </span>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
 
             {/* Contact Form */}
@@ -221,7 +221,6 @@ export default function Contact() {
                           <option>Support Coordination</option>
                           <option>Psychosocial Recovery Coaching</option>
                           <option>Specialist Support Coordination</option>
-                          <option>Individualised Living Options</option>
                           <option>Other Enquiry</option>
                         </select>
                       </div>

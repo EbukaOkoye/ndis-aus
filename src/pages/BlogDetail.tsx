@@ -1,6 +1,16 @@
 import { useParams, Link } from "react-router-dom";
 import { motion } from "motion/react";
-import { Calendar, User, Tag, ArrowLeft, Share2, Facebook, Twitter, Linkedin, MessageSquare } from "lucide-react";
+import {
+  Calendar,
+  User,
+  Tag,
+  ArrowLeft,
+  Share2,
+  Facebook,
+  Twitter,
+  Linkedin,
+  MessageSquare,
+} from "lucide-react";
 
 const blogPosts = [
   {
@@ -58,7 +68,10 @@ export default function BlogDetail() {
 
         <div className="container relative z-10 max-w-4xl">
           <div className="flex flex-col gap-8">
-            <Link to="/blog" className="inline-flex items-center gap-2 text-primary font-bold text-sm hover:gap-3 transition-all">
+            <Link
+              to="/blog"
+              className="inline-flex items-center gap-2 text-primary font-bold text-sm hover:gap-3 transition-all"
+            >
               <ArrowLeft size={16} />
               Back to Blog
             </Link>
@@ -100,7 +113,9 @@ export default function BlogDetail() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
               {/* Social Share Sidebar */}
               <aside className="lg:col-span-1 flex lg:flex-col items-center gap-4 lg:sticky lg:top-32 h-fit">
-                <span className="text-[10px] uppercase font-bold text-slate-400 lg:rotate-90 lg:mb-8 whitespace-nowrap">Share This</span>
+                <span className="text-[10px] uppercase font-bold text-slate-400 lg:rotate-90 lg:mb-8 whitespace-nowrap">
+                  Share This
+                </span>
                 <button className="w-10 h-10 rounded-full bg-slate-50 border border-slate-100 flex items-center justify-center text-slate-600 hover:bg-primary hover:text-white hover:border-primary transition-all">
                   <Facebook size={18} />
                 </button>
@@ -115,14 +130,17 @@ export default function BlogDetail() {
               {/* Main Content */}
               <div className="lg:col-span-11 prose prose-slate prose-lg max-w-none">
                 <div dangerouslySetInnerHTML={{ __html: post.content }} />
-                
+
                 <div className="mt-16 pt-8 border-t border-slate-100 flex flex-wrap gap-2">
                   <span className="text-sm font-bold text-slate-900 mr-2 flex items-center gap-1">
                     <Tag size={16} className="text-primary" />
                     Tags:
                   </span>
                   {post.tags.map((tag) => (
-                    <span key={tag} className="px-3 py-1 rounded-lg bg-slate-50 border border-slate-200 text-xs font-medium text-slate-600">
+                    <span
+                      key={tag}
+                      className="px-3 py-1 rounded-lg bg-slate-50 border border-slate-200 text-xs font-medium text-slate-600"
+                    >
                       #{tag}
                     </span>
                   ))}
@@ -131,12 +149,22 @@ export default function BlogDetail() {
                 {/* Author Bio */}
                 <div className="mt-16 p-8 rounded-3xl bg-slate-50 border border-slate-100 flex flex-col sm:flex-row items-center gap-8">
                   <div className="w-24 h-24 rounded-2xl overflow-hidden shrink-0 shadow-lg">
-                    <img src={`https://picsum.photos/seed/${post.author}/200/200`} alt={post.author} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                    <img
+                      src={`https://picsum.photos/seed/${post.author}/200/200`}
+                      alt={post.author}
+                      className="w-full h-full object-cover"
+                      referrerPolicy="no-referrer"
+                    />
                   </div>
                   <div className="flex flex-col gap-2 text-center sm:text-left">
-                    <h3 className="text-xl font-bold text-slate-900">{post.author}</h3>
+                    <h3 className="text-xl font-bold text-slate-900">
+                      {post.author}
+                    </h3>
                     <p className="text-sm text-slate-600 leading-relaxed">
-                      Sarah is the Principal Support Coordinator at MYSC with over 10 years of experience in the disability sector. She is passionate about helping participants navigate the NDIS and achieve their goals.
+                      Sarah is the Principal Support Coordinator at Australian
+                      NDIS Services with over 10 years of experience in the
+                      disability sector. She is passionate about helping
+                      participants navigate the NDIS and achieve their goals.
                     </p>
                   </div>
                 </div>
@@ -150,16 +178,28 @@ export default function BlogDetail() {
       <section className="section-padding bg-slate-50">
         <div className="container">
           <div className="flex flex-col items-center text-center gap-4 mb-12">
-            <h2 className="text-3xl font-bold text-slate-900">Related Articles</h2>
+            <h2 className="text-3xl font-bold text-slate-900">
+              Related Articles
+            </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[1, 2, 3].map((i) => (
-              <div key={i} className="bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden flex flex-col gap-4 p-4">
+              <div
+                key={i}
+                className="bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden flex flex-col gap-4 p-4"
+              >
                 <div className="aspect-video rounded-xl overflow-hidden">
-                  <img src={`https://picsum.photos/seed/related${i}/400/300`} alt="Related" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                  <img
+                    src={`https://picsum.photos/seed/related${i}/400/300`}
+                    alt="Related"
+                    className="w-full h-full object-cover"
+                    referrerPolicy="no-referrer"
+                  />
                 </div>
                 <div className="flex flex-col gap-2 p-2">
-                  <span className="text-[10px] uppercase font-bold text-primary tracking-widest">NDIS Guides</span>
+                  <span className="text-[10px] uppercase font-bold text-primary tracking-widest">
+                    NDIS Guides
+                  </span>
                   <h3 className="text-lg font-bold text-slate-900 leading-tight hover:text-primary transition-colors cursor-pointer">
                     How to Prepare for Your First NDIS Planning Meeting
                   </h3>

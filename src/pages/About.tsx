@@ -44,15 +44,15 @@ export default function About() {
                 <span>About Australian NDIS Services</span>
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-[1.1]">
-                Empowering People with Disability{" "}
-                <span className="text-primary">of All Ages</span>
+                Empowering people of all{" "}
+                <span className="text-primary">
+                  {" "}
+                  Ages, Abilities and Cultures
+                </span>
               </h1>
               <p className="text-lg text-slate-200 leading-relaxed max-w-xl">
-                Australian NDIS Services was founded with a clear mission: to
-                provide expert, compassionate, and accessible NDIS support
-                coordination to the Australian community. We are a
-                NDIS-registered service provider providing services all over
-                Australia.
+                We acknowledge the Traditional Owners and Custodians of this
+                land, and pay our respects to Elders past, present and emerging.
               </p>
               {/* <div className="flex items-center gap-4">
                 <div className="flex -space-x-3">
@@ -88,7 +88,8 @@ export default function About() {
             >
               <div className="rounded-2xl overflow-hidden shadow-2xl aspect-[4/3]">
                 <img
-                  src="https://picsum.photos/seed/about-hero/800/600"
+                  // src="https://picsum.photos/seed/about-hero/800/600"
+                  src="/thumbnail_three.jpg"
                   alt="Our Team"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
@@ -271,7 +272,7 @@ export default function About() {
       </section> */}
 
       {/* CTA Section */}
-      <section className="section-padding bg-slate-50">
+      {/* <section className="section-padding bg-slate-50">
         <div className="container">
           <div className="max-w-4xl mx-auto p-12 rounded-3xl bg-white border border-slate-100 shadow-xl flex flex-col md:flex-row items-center gap-12 text-center md:text-left">
             <div className="flex flex-col gap-4 flex-grow">
@@ -288,7 +289,7 @@ export default function About() {
             </Link>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

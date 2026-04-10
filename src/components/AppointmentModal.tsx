@@ -22,7 +22,6 @@ const services = [
   "Support Coordination",
   "Specialist Support Coordination",
   "Psychosocial Recovery Coaching",
-  "Individualised Living Options",
   "Other Support Services",
 ];
 
@@ -143,7 +142,7 @@ export default function AppointmentModal({
                       <p className="text-sm font-medium">Choose your time</p>
                     </div>
                   </div>
-                  <div className="flex items-center gap-4">
+                  {/* <div className="flex items-center gap-4">
                     <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center">
                       <CheckCircle2 size={20} />
                     </div>
@@ -155,7 +154,7 @@ export default function AppointmentModal({
                         Instant notification
                       </p>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
 
@@ -196,7 +195,6 @@ export default function AppointmentModal({
                             name="name"
                             value={formData.name}
                             onChange={handleChange}
-                            placeholder="John Doe"
                             className="w-full pl-10 pr-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all"
                           />
                         </div>
@@ -216,7 +214,6 @@ export default function AppointmentModal({
                             name="email"
                             value={formData.email}
                             onChange={handleChange}
-                            placeholder="john@example.com"
                             className="w-full pl-10 pr-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all"
                           />
                         </div>
@@ -239,7 +236,6 @@ export default function AppointmentModal({
                             name="phone"
                             value={formData.phone}
                             onChange={handleChange}
-                            placeholder="0400 000 000"
                             className="w-full pl-10 pr-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all"
                           />
                         </div>

@@ -21,7 +21,8 @@ export default function Services() {
         {/* Background Image with Professional Overlay */}
         <div className="absolute inset-0 z-0">
           <img
-            src="https://picsum.photos/seed/ndis-independence/1920/1080"
+            // src="https://picsum.photos/seed/ndis-independence/1920/1080"
+            src="/thumbnail_four.jpg"
             alt="NDIS Services and Independence"
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
@@ -98,7 +99,11 @@ export default function Services() {
                     ))}
                   </div>
                   <div className="pt-4">
-                    <Link to={service.href} className="btn-primary px-8">
+                    <Link
+                      to={service.href}
+                      target="_blank"
+                      className="btn-primary px-8"
+                    >
                       Learn More About {service.title}
                     </Link>
                   </div>
@@ -198,10 +203,10 @@ export default function Services() {
       {/* CTA Section */}
       <section className="section-padding bg-white">
         <div className="container">
-          <div className="max-w-5xl mx-auto p-12 rounded-3xl bg-slate-900 text-white flex flex-col lg:flex-row items-center gap-12">
+          <div className="max-w-5xl mx-auto p-12 rounded-3xl bg-[#035e9e] text-white flex flex-col lg:flex-row items-center gap-12">
             <div className="flex flex-col gap-6 grow text-center lg:text-left">
               <h2 className="text-3xl md:text-4xl font-bold">
-                Need a custom support plan?
+                Get in touch with our expert coordinators today!
               </h2>
               <p className="text-slate-400 text-lg">
                 Our expert coordinators can help you design a support strategy
@@ -210,16 +215,16 @@ export default function Services() {
               <div className="flex flex-col sm:flex-row items-center gap-6 justify-center lg:justify-start">
                 <a
                   href="tel:0415777143"
-                  className="flex items-center gap-3 text-primary font-bold"
+                  className="flex items-center gap-3 text-white font-bold"
                 >
-                  <Phone size={20} />
+                  <Phone size={20} className="text-white" />
                   0415 777 143
                 </a>
                 <a
                   href="mailto:office@ausndisservices.com.au"
-                  className="flex items-center gap-3 text-primary font-bold"
+                  className="flex items-center gap-3 text-white font-bold"
                 >
-                  <Mail size={20} />
+                  <Mail size={20} className="text-white" />
                   office@ausndisservices.com.au
                 </a>
               </div>

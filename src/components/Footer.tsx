@@ -59,9 +59,15 @@ export default function Footer() {
                 <Linkedin size={18} />
               </a>
             </div>
-            <div className="relative w-14 h-14 transition-transform duration-300 group-hover:scale-105">
+            <div className="relative w-24 h-24 transition-transform duration-300 group-hover:scale-105 flex items-center gap-2.5">
               <img
                 src="/NDIS logo.png"
+                alt="Australian NDIS Services Logo"
+                className="w-full h-full object-contain"
+                referrerPolicy="no-referrer"
+              />
+              <img
+                src="/flags.png"
                 alt="Australian NDIS Services Logo"
                 className="w-full h-full object-contain"
                 referrerPolicy="no-referrer"
@@ -140,10 +146,10 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="pt-10 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-6 text-xs text-slate-500 font-medium">
           <p>
-            © {new Date().getFullYear()} My Support Connection. All rights
+            © {new Date().getFullYear()} Australian NDIS Services. All rights
             reserved.
           </p>
-          <div className="flex items-center gap-8">
+          {/* <div className="flex items-center gap-8">
             <Link
               to="/privacy"
               className="hover:text-primary transition-colors"
@@ -153,7 +159,7 @@ export default function Footer() {
             <Link to="/terms" className="hover:text-primary transition-colors">
               Terms of Service
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

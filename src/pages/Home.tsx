@@ -47,7 +47,7 @@ export default function Home() {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-[1.1]">
                 Expert NDIS{" "}
                 <span className="text-primary">Support Coordination</span> in
-                Adelaide
+                South Australia
               </h1>
               <p className="text-lg text-slate-600 leading-relaxed max-w-xl">
                 We help you navigate the NDIS with confidence, connecting you to
@@ -97,11 +97,11 @@ export default function Home() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="relative"
             >
-              <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl aspect-[4/3]">
+              <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl aspect-3/2">
                 <img
-                  src="https://picsum.photos/seed/healthcare/800/600"
+                  src="/ndis_logo.png"
                   alt="Support Coordination"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-center"
                   referrerPolicy="no-referrer"
                 />
               </div>
@@ -137,8 +137,9 @@ export default function Home() {
               How We Can Support You
             </h2>
             <p className="text-slate-600 max-w-2xl">
-              We provide a range of specialised services tailored to your unique
-              needs, helping you make the most of your NDIS funding.
+              We can provide Recovery Coach services, Support Coordination or
+              Specialist Support Coordination, depending on your needs and the
+              type of funding you have been allocated.
             </p>
           </div>
 
@@ -190,7 +191,7 @@ export default function Home() {
                 Expert Guidance with a Personal Touch
               </h2>
               <p className="text-slate-600 leading-relaxed">
-                At My Support Connection, we believe everyone deserves the
+                At Australian NDIS Services, we believe everyone deserves the
                 opportunity to live their best life. Our team is dedicated to
                 providing the highest quality support coordination.
               </p>
@@ -219,7 +220,7 @@ export default function Home() {
             <div className="relative">
               <div className="rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="/services-background.jpg"
+                  src="/rhdp.jpg"
                   alt="Our Team"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
@@ -237,7 +238,7 @@ export default function Home() {
                     ))}
                   </div>
                   <p className="text-sm italic text-slate-600">
-                    "The team at MYSC has been instrumental in helping me
+                    "The team at Australian NDIS Services has been instrumental in helping me
                     navigate my NDIS plan. I couldn't have done it without
                     them."
                   </p>

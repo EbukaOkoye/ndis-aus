@@ -9,9 +9,9 @@ const navLinks = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
   { name: "Services", href: "/services" },
-  { name: "Blog", href: "/blog" },
+  // { name: "Blog", href: "/blog" },
   { name: "Contact", href: "/contact" },
-  { name: "Donate", href: "/donation" },
+  // { name: "Donate", href: "/donation" },
 ];
 
 export default function Navbar() {
@@ -38,9 +38,9 @@ export default function Navbar() {
       <div className="bg-primary text-white py-2 hidden md:block">
         <div className="container flex justify-between items-center text-sm">
           <div className="flex items-center gap-6">
-            <div className="relative w-14 h-14 transition-transform duration-300 group-hover:scale-105">
+            <div className="relative w-24 h-14 transition-transform duration-300 group-hover:scale-105">
               <img
-                src="/NDIS logo.png"
+                src="/ndis_logo_love.png"
                 alt="Australian NDIS Services Logo"
                 className="w-full h-full object-contain"
                 referrerPolicy="no-referrer"
@@ -61,7 +61,7 @@ export default function Navbar() {
               <span>office@ausndisservices.com.au</span>
             </a>
           </div>
-          <div className="flex items-center gap-4">
+          {/* <div className="flex items-center gap-4">
             <Link
               to="/donation"
               className="flex items-center gap-2 hover:text-white/80 transition-colors font-medium"
@@ -69,7 +69,7 @@ export default function Navbar() {
               <Heart size={14} className="fill-white" />
               <span>Support Our Mission</span>
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
 
