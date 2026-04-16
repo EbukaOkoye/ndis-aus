@@ -8,6 +8,7 @@ import {
   Target,
   Eye,
   Award,
+  Goal,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { cn } from "@/src/lib/utils";
@@ -89,7 +90,7 @@ export default function About() {
               <div className="rounded-2xl overflow-hidden shadow-2xl aspect-[4/3]">
                 <img
                   // src="https://picsum.photos/seed/about-hero/800/600"
-                  src="/thumbnail_three.jpg"
+                  src="/about-small.png"
                   alt="Our Team"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
@@ -132,7 +133,7 @@ export default function About() {
       {/* Mission & Vision */}
       <section className="section-padding bg-white">
         <div className="container">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
             <div className="p-10 rounded-3xl bg-slate-50 border border-slate-100 flex flex-col gap-6">
               <div className="w-16 h-16 bg-primary/10 text-primary rounded-2xl flex items-center justify-center">
                 <Target size={32} />
@@ -154,6 +155,15 @@ export default function About() {
                 providing the best possible support so that every participant
                 can live their best, most independent, meaningful and fulfilling
                 life
+              </p>
+            </div>
+            <div className="p-10 rounded-3xl bg-slate-50 border border-slate-100 flex flex-col gap-6">
+              <div className="w-16 h-16 bg-primary/10 text-primary rounded-2xl flex items-center justify-center">
+                <Goal size={32} />
+              </div>
+              <h2 className="text-3xl font-bold text-slate-900">Our Logo</h2>
+              <p className="text-slate-600 leading-relaxed">
+                Shows the process of step-by-step growth, which is the key to achieving your goals
               </p>
             </div>
           </div>

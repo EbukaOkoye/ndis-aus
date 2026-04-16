@@ -117,7 +117,7 @@ export default function Services() {
                 >
                   <div className="aspect-4/3 rounded-3xl overflow-hidden shadow-2xl border-8 border-white">
                     <img
-                      src={`https://picsum.photos/seed/${service.id}/800/600`}
+                      src={service.img}
                       alt={service.title}
                       className="w-full h-full object-cover"
                       referrerPolicy="no-referrer"

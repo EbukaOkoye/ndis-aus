@@ -185,7 +185,7 @@ export default function Contact() {
                         <input
                           type="text"
                           required
-                          placeholder="John Doe"
+                          placeholder="Paul Smith"
                           className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent bg-white"
                         />
                       </div>
@@ -196,7 +196,7 @@ export default function Contact() {
                         <input
                           type="email"
                           required
-                          placeholder="john@example.com"
+                          placeholder="paul@example.com"
                           className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent bg-white"
                         />
                       </div>

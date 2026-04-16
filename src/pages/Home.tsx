@@ -106,9 +106,9 @@ export default function Home() {
                 />
               </div>
               {/* Decorative elements */}
-              <div className="absolute -top-6 -right-6 w-32 h-32 bg-primary/10 rounded-full blur-3xl" />
-              <div className="absolute -bottom-10 -left-10 w-48 h-48 bg-primary/20 rounded-full blur-3xl" />
-              <div className="absolute top-1/2 -translate-y-1/2 -right-12 hidden xl:block">
+              {/* <div className="absolute -top-6 -right-6 w-32 h-32 bg-primary/10 rounded-full blur-3xl" /> */}
+              {/* <div className="absolute -bottom-10 -left-10 w-48 h-48 bg-primary/20 rounded-full blur-3xl" /> */}
+              {/* <div className="absolute top-1/2 -translate-y-1/2 -right-12 hidden xl:block">
                 <div className="bg-white p-6 rounded-xl shadow-xl border border-slate-100 flex flex-col gap-4 max-w-[200px]">
                   <div className="w-10 h-10 bg-emerald-100 text-emerald-600 rounded-lg flex items-center justify-center">
                     <CheckCircle2 size={24} />
@@ -120,7 +120,7 @@ export default function Home() {
                     Quality assured services you can trust.
                   </p>
                 </div>
-              </div>
+              </div> */}
             </motion.div>
           </div>
         </div>
@@ -377,7 +377,7 @@ export default function Home() {
                     </label>
                     <input
                       type="text"
-                      placeholder="John"
+                      placeholder="Paul"
                       className="bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:ring-2 focus:ring-amber-400/50 transition-all"
                     />
                   </div>
@@ -387,7 +387,7 @@ export default function Home() {
                     </label>
                     <input
                       type="text"
-                      placeholder="Doe"
+                      placeholder="Smith"
                       className="bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:ring-2 focus:ring-amber-400/50 transition-all"
                     />
                   </div>
@@ -397,7 +397,7 @@ export default function Home() {
                     </label>
                     <input
                       type="email"
-                      placeholder="john@example.com"
+                      placeholder="paul@example.com"
                       className="bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:ring-2 focus:ring-amber-400/50 transition-all"
                     />
                   </div>
