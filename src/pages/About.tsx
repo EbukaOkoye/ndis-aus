@@ -115,18 +115,14 @@ export default function About() {
       </section>
 
       <section className="section-padding bg-white lg:w-9/12 lg:mx-auto">
-        <p className="text-slate-600 leading-relaxed ;g:text-xl">
-          Australian NDIS Services is a fast growing community that values
-          people of all ages, abilities and cultures. We acknowledge the
-          Traditional Owners and Custodians of this land, and pay our respects
-          to Elders past, present and emerging. Our qualified Social Workers
-          have been working across the disability and mental health sectors for
-          over 10 years with people from all walks of life. We are passionate
-          about getting the best results to help you reach your goals. We
-          provide services to people all over South Australia, so wherever you
-          live in SA, we can meet with you to discuss your support needs. All
-          our staff have current NDIS, Police and Working with Children checks,
-          as well as First Aid and CPR.
+        <p className="text-slate-600 leading-relaxed lg:text-2xl font-medium">
+          Australian NDIS Services is a fast growing community that 
+          values people of all ages, abilities and cultures. We 
+          acknowledge the Traditional Owners and Custodians of 
+          Country throughout Australia, honouring their ongoing 
+          connection to land, waters, and community. We provide 
+          services to NDIS participants, and we can meet with 
+          you to discuss your support needs.
         </p>
       </section>
 

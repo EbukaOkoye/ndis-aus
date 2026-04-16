@@ -59,7 +59,7 @@ export default function Footer() {
                 <Linkedin size={18} />
               </a>
             </div>
-            <div className="relative w-1/2 lg:w-11/12 transition-transform duration-300 group-hover:scale-105 flex items-center gap-2.5">
+            <div className="relative w-3/5 lg:w-11/12 transition-transform duration-300 group-hover:scale-105 flex items-center gap-2.5">
               <img
                 src="/NDIS logo.png"
                 alt="Australian NDIS Services Logo"
