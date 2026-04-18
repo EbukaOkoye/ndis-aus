@@ -158,7 +158,7 @@ export default function About() {
             </div>
             <div className="p-10 rounded-3xl bg-slate-50 border border-slate-100 flex flex-col gap-6">
               <div className="w-16 h-16 bg-primary/10 text-primary rounded-2xl flex items-center justify-center">
-                <Goal size={32} />
+                <img src="/ndis_logo-removebg.png" alt="logo" width={102} height={102} />
               </div>
               <h2 className="text-3xl font-bold text-slate-900">Our Logo</h2>
               <p className="text-slate-600 leading-relaxed">
