@@ -46,49 +46,32 @@ export default function Home() {
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-[1.1]">
                 Expert NDIS{" "}
-                <span className="text-primary">Support Coordination</span> in
-                South Australia
+                <span className="text-primary">Support Coordination</span>
               </h1>
               <p className="text-lg text-slate-600 leading-relaxed max-w-xl">
                 We help you navigate the NDIS with confidence, connecting you to
                 the right supports to achieve your goals and live a fulfilling
                 life.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Link to="/contact" className="btn-primary px-8 py-4 text-lg">
+              <div className="grid grid-cols-2 gap-4">
+                <Link to="/contact" className="btn-primary py-4 text-lg">
                   Get Started Today
                 </Link>
                 <Link
                   to="/services"
-                  className="btn-secondary px-8 py-4 text-lg"
+                  className="btn-outline px-8 py-4 text-lg"
                 >
                   Explore Services
                 </Link>
+                <a
+                  href="https://www.ndis.gov.au/understanding"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn-outline bg-white text-base"
+                >
+                  Understanding the NDIS
+                </a>
               </div>
-              {/* <div className="flex items-center gap-6 pt-4">
-                <div className="flex -space-x-3">
-                  {[1, 2, 3, 4].map((i) => (
-                    <div
-                      key={i}
-                      className="w-10 h-10 rounded-full border-2 border-white bg-slate-200 overflow-hidden"
-                    >
-                      <img
-                        src={`https://picsum.photos/seed/user${i}/100/100`}
-                        alt="User"
-                        referrerPolicy="no-referrer"
-                      />
-                    </div>
-                  ))}
-                </div>
-                <div className="flex flex-col">
-                  <span className="text-sm font-bold text-slate-900">
-                    500+ Participants
-                  </span>
-                  <span className="text-xs text-slate-500">
-                    Supported across South Australia
-                  </span>
-                </div>
-              </div> */}
             </motion.div>
 
             <motion.div
@@ -97,30 +80,14 @@ export default function Home() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="relative"
             >
-              <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl aspect-3/2">
+              <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl aspect-square">
                 <img
                   src="/ndis_logo.png"
                   alt="Support Coordination"
-                  className="w-full h-full object-center"
+                  className="w-full h-full object-cover bg-white"
                   referrerPolicy="no-referrer"
                 />
               </div>
-              {/* Decorative elements */}
-              {/* <div className="absolute -top-6 -right-6 w-32 h-32 bg-primary/10 rounded-full blur-3xl" /> */}
-              {/* <div className="absolute -bottom-10 -left-10 w-48 h-48 bg-primary/20 rounded-full blur-3xl" /> */}
-              {/* <div className="absolute top-1/2 -translate-y-1/2 -right-12 hidden xl:block">
-                <div className="bg-white p-6 rounded-xl shadow-xl border border-slate-100 flex flex-col gap-4 max-w-[200px]">
-                  <div className="w-10 h-10 bg-emerald-100 text-emerald-600 rounded-lg flex items-center justify-center">
-                    <CheckCircle2 size={24} />
-                  </div>
-                  <p className="text-sm font-bold text-slate-900">
-                    Registered NDIS Provider
-                  </p>
-                  <p className="text-xs text-slate-500">
-                    Quality assured services you can trust.
-                  </p>
-                </div>
-              </div> */}
             </motion.div>
           </div>
         </div>
@@ -473,13 +440,10 @@ export default function Home() {
             </div>
 
             <div className="relative z-10 max-w-3xl mx-auto flex flex-col items-center gap-8">
-              <h2 className="text-3xl md:text-5xl font-extrabold leading-tight">
-                Ready to take control of your NDIS journey?
-              </h2>
-              <p className="text-lg text-white/80 leading-relaxed">
+              <h2 className="text-2xl md:text-4xl font-extrabold leading-tight">
                 Contact us today for a free consultation and discover how our
                 expert support coordinators can help you achieve your goals.
-              </p>
+              </h2>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   to="/contact"

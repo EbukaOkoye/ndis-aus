@@ -6,7 +6,7 @@ export const services = [
     description:
       "Expert guidance to help you understand and implement your NDIS plan effectively.",
     icon: Users,
-    href: "/services/support-coordination",
+    href: "/services#support-coordination",
     color: "bg-blue-50 text-blue-600",
   },
   {
@@ -14,7 +14,7 @@ export const services = [
     description:
       "Specialised support for people with psychosocial disabilities to build resilience and hope.",
     icon: Heart,
-    href: "/services/recovery-coaching",
+    href: "/services#recovery-coaching",
     color: "bg-rose-50 text-rose-600",
   },
   {
@@ -22,7 +22,7 @@ export const services = [
     description:
       "Higher level support for complex situations, addressing complex barriers that affect your ability to access the right supports.",
     icon: Shield,
-    href: "/services/specialist-coordination",
+    href: "/services#specialist-coordination",
     color: "bg-amber-50 text-amber-600",
   },
   // {
@@ -49,12 +49,12 @@ export const faqs = [
   {
     question: "Why choose Australian NDIS Services for support coordination?",
     answer:
-      "We offer experienced coordinators, deep NDIS knowledge, clear communication, and a commitment to your goals.",
+      "We offer experienced coordinators, expert NDIS knowledge, clear communication, and a commitment to your goals.",
   },
   {
     question: "Do you provide services in my area?",
     answer:
-      "We primarily serve the Adelaide and surrounding South Australia regions, offering both in-person and remote support.",
+      "We primarily serve the Adelaide and surrounding South Australia regions and are able to reach out to you anywhere in Australia, as we offer both in-person and remote support.",
   },
 ];
 
@@ -92,9 +92,9 @@ export const footerLinks = [
   {
     title: "Our Services",
     links: [
-      { name: "Support Coordination", href: "/services/support-coordination" },
-      { name: "Psychosocial Recovery Coaching", href: "/services/recovery-coaching" },
-      { name: "Specialist Support Coordination", href: "/services/specialist-coordination" },
+      { name: "Support Coordination", href: "/services#support-coordination" },
+      { name: "Psychosocial Recovery Coaching", href: "/services#recovery-coaching" },
+      { name: "Specialist Support Coordination", href: "/services#specialist-coordination" },
       // { name: "Individualised Living Options", href: "/services/ilo" },
     ],
   },
@@ -128,9 +128,10 @@ export const servicesServicesPage = [
   {
     id: "support-coordination",
     title: "Support Coordination",
-    description: "When your NDIS plan is approved, you might receive funded support coordination to help you to use your plan to achieve your goals. Getting this type of funded support in your plan depends on your individual needs and circumstances, such as your disability or your personal situation.",
+    description:
+      "When your NDIS plan is approved, you might receive funded support coordination to help you to use your plan to achieve your goals. Getting this type of funded support in your plan depends on your individual needs and circumstances, such as your disability or your personal situation. We can help you with:",
     icon: Users,
-    img: "/aborigines.jpeg",
+    img: "/about-small.png",
     href: "https://ndis.gov.au/participants/using-your-plan/who-can-help-start-your-plan/support-coordination",
     color: "bg-blue-50 text-blue-600",
     features: ["Understand and use your NDIS plan", "Build your ability to become more independent", "Access community and mainstream services", "Make the most of your funded supports"],
@@ -138,17 +139,20 @@ export const servicesServicesPage = [
   {
     id: "recovery-coaching",
     title: "Psychosocial Recovery Coaching",
-    description: "Specialised support for people with psychosocial disabilities to build resilience and hope. We focus on your strengths and help you navigate the mental health system.",
+    description:
+      "Specialised support for people with psychosocial disabilities to build resilience and hope. We focus on your strengths and help you navigate the mental health system with:",
     icon: Heart,
     img: "/hands-together.jpeg",
-    href: "https://ndis.gov.au/understanding",
+    href: "https://www.ndis.gov.au/understanding/how-ndis-works/psychosocial-disability/psychosocial-disability-supports",
+    pdfHref: "https://www.ndis.gov.au/media/6964/download?attachment",
     color: "bg-rose-50 text-rose-600",
     features: ["Resilience Building", "Mental Health Support", "Goal Setting", "Crisis Planning"],
   },
   {
     id: "specialist-coordination",
     title: "Specialist Support Coordination",
-    description: "Specialist Support Coordination is a higher level of support coordination. It is for people whose situations are more complex and who need specialist support.",
+    description:
+      "Specialist Support Coordination is a higher level of support coordination. It is for people whose situations are more complex and who need specialist support such as:",
     icon: Shield,
     img: "/wheelchair-play.jpeg",
     href: "https://www.ndis.gov.au/understanding/how-ndis-works/psychosocial-disability/psychosocial-disability-supports",

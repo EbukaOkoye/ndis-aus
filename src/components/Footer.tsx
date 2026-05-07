@@ -134,7 +134,7 @@ export default function Footer() {
                 <MapPin size={18} className="text-primary shrink-0 mt-1" />
                 <div className="flex flex-col">
                   <span className="text-xs text-slate-500 uppercase font-bold">
-                    Location
+                    Head Office
                   </span>
                   <span className="text-sm">Adelaide, South Australia</span>
                 </div>

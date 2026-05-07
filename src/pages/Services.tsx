@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { motion } from "motion/react";
 import {
   ArrowRight,
@@ -9,11 +10,33 @@ import {
   Phone,
   Mail,
 } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 import { cn } from "@/src/lib/utils";
 import { servicesServicesPage } from "../lib/dummyData";
 
 export default function Services() {
+  const location = useLocation();
+  const params = useParams();
+
+  useEffect(() => {
+    const anchor = location.hash.replace("#", "") || params.id;
+    if (!anchor) return;
+
+    const attemptScroll = (triesLeft: number) => {
+      const el = document.getElementById(anchor);
+      if (!el) {
+        if (triesLeft <= 0) return;
+        window.setTimeout(() => attemptScroll(triesLeft - 1), 100);
+        return;
+      }
+
+      const top = el.getBoundingClientRect().top + window.scrollY - 110;
+      window.scrollTo({ top, behavior: "smooth" });
+    };
+
+    attemptScroll(10);
+  }, [location.hash, params.id]);
+
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
@@ -58,12 +81,13 @@ export default function Services() {
             {servicesServicesPage.map((service, index) => (
               <motion.div
                 key={service.id}
+                id={service.id}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 className={cn(
-                  "grid grid-cols-1 lg:grid-cols-2 gap-16 items-center",
+                  "grid grid-cols-1 lg:grid-cols-2 gap-16 items-center scroll-mt-28",
                   index % 2 === 1 ? "lg:flex-row-reverse" : "",
                 )}
               >
@@ -98,14 +122,23 @@ export default function Services() {
                       </div>
                     ))}
                   </div>
-                  <div className="pt-4">
+                  <div className="">
                     <Link
                       to={service.href}
                       target="_blank"
-                      className="btn-primary px-8"
+                      className="btn-primary px-8 mb-2"
                     >
                       Learn More About {service.title}
                     </Link>
+                    {service.pdfHref ? (
+                      <Link
+                        to={service.pdfHref}
+                        target="_blank"
+                        className="btn-secondary px-8"
+                      >
+                        Psychosocial recovery coach information sheet (PDF)
+                      </Link>
+                    ) : null}
                   </div>
                 </div>
 
@@ -208,7 +241,7 @@ export default function Services() {
               <h2 className="text-3xl md:text-4xl font-bold">
                 Get in touch with our expert coordinators today!
               </h2>
-              <p className="text-slate-400 text-lg">
+              <p className="text-white/90 text-xl font-bold">
                 Our expert coordinators can help you design a support strategy
                 that perfectly aligns with your goals and NDIS plan.
               </p>

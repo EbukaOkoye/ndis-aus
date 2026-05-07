@@ -58,30 +58,6 @@ export default function About() {
                 with Children checks, as well as First Aid and CPR. We are passionate
                 about getting the best results to help you reach your goals.
               </p>
-              {/* <div className="flex items-center gap-4">
-                <div className="flex -space-x-3">
-                  {[1, 2, 3, 4].map((i) => (
-                    <div
-                      key={i}
-                      className="w-12 h-12 rounded-full border-4 border-slate-800 bg-slate-200 overflow-hidden"
-                    >
-                      <img
-                        src={`https://picsum.photos/seed/staff${i}/100/100`}
-                        alt="Staff"
-                        referrerPolicy="no-referrer"
-                      />
-                    </div>
-                  ))}
-                </div>
-                <div className="flex flex-col">
-                  <span className="text-sm font-bold text-white">
-                    Our Expert Team
-                  </span>
-                  <span className="text-xs text-slate-300">
-                    Dedicated to your success
-                  </span>
-                </div>
-              </div> */}
             </motion.div>
 
             <motion.div
@@ -90,7 +66,7 @@ export default function About() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="relative"
             >
-              <div className="rounded-2xl overflow-hidden shadow-2xl aspect-[4/3]">
+              <div className="rounded-2xl overflow-hidden shadow-2xl aspect-4/3">
                 <img
                   // src="https://picsum.photos/seed/about-hero/800/600"
                   src="/about-small.png"
