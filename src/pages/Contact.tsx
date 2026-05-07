@@ -85,7 +85,7 @@ export default function Contact() {
                   },
                   {
                     icon: MapPin,
-                    title: "Location",
+                    title: "Head Office",
                     value: "Adelaide, South Australia",
                     href: "#",
                   },

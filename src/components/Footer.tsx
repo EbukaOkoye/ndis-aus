@@ -20,7 +20,7 @@ export default function Footer() {
             <Link to="/" className="flex items-center gap-3 group">
               <div className="relative w-20 h-20 transition-transform duration-300 group-hover:scale-105">
                 <img
-                  src="/ndis_logo-removebg.png"
+                  src="/ndis_logo.png"
                   alt="Australian NDIS Services Logo"
                   className="w-full h-full object-contain"
                   referrerPolicy="no-referrer"
