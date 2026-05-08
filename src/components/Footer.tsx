@@ -40,12 +40,12 @@ export default function Footer() {
               coordination. */}
             </p>
             <div className="flex items-center gap-4">
-              <a
+              {/* <a
                 href="#"
                 className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary transition-colors"
               >
                 <Facebook size={18} />
-              </a>
+              </a> */}
               <a
                 href="#"
                 className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary transition-colors"
