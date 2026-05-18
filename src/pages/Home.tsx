@@ -64,7 +64,7 @@ export default function Home() {
                   Explore Services
                 </Link>
                 <a
-                  href="https://www.ndis.gov.au/participants/working-providers/support-coordinators-and-plan-managers/what-support-coordinator"
+                  href="https://www.ndis.gov.au/understanding-ndis"
                   target="_blank"
                   rel="noreferrer"
                   className="btn-outline bg-white text-base"
