@@ -132,7 +132,7 @@ export const servicesServicesPage = [
       "When your NDIS plan is approved, you might receive funded support coordination to help you to use your plan to achieve your goals. Getting this type of funded support in your plan depends on your individual needs and circumstances, such as your disability or your personal situation. We can help you with:",
     icon: Users,
     img: "/about-small.png",
-    href: "https://www.ndis.gov.au/providers/working-participants/support-coordinators/what-are-support-coordinator-reporting-requirements",
+    href: "https://www.ndis.gov.au/participants/working-providers/support-coordinators-and-plan-managers/what-support-coordinator",
     color: "bg-blue-50 text-blue-600",
     features: ["Understand and use your NDIS plan", "Build your ability to become more independent", "Access community and mainstream services", "Make the most of your funded supports"],
   },
